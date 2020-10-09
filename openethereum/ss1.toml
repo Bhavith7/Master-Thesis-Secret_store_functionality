@@ -1,0 +1,25 @@
+[parity]
+chain = "dev"
+base_path = "db.ss1"
+
+[network]
+port = 30301
+bootnodes = ["enode://2e3c709ca256e43694e9cc0c6f5c1845c308d373b8e54021c1834e94eda4927b8c41212eb07541f0c02511ba8410430740d27011b999cbcab0b658a269e40a3e@127.0.0.1:30302",
+             "enode://4a52d7885cf5b881ccc9be2b9e643d98f724267d565de4a0b5f803bfef05aec23e84ec793d92ca3ec600559e8de2af95f72602d752d52daf7e0c8c0aa1d2330c@127.0.0.1:30303"]
+[secretstore]
+self_secret = "68ee137130bcc8f8b80683ecc734aae8219dcedc"
+disable = false
+disable_http = false      
+http_interface = "local"  
+http_port = 8010          
+acl_contract = "none"     
+server_set_contract = "none"
+nodes = ["c824f93eac9ead78590599dc70f286c401813c49eff99db2370c1b97c25a7d122fe8ed945aa641da0bf376d022536a3362027dd5a0f5c7bcaa34a56c72dd6f2f@127.0.0.1:8011",
+         "e2588d93917c74a63226e485099d6a5a2b7f876ae0aaebf92bc07db20f185eaad5d096e6818050c82c05b958536ce5ef05dd37cfa3a99bd9f6bb23adbfa567ba@127.0.0.1:8012",
+         "73dabbf22153769ada1ba44c318ef6a5d285fe2c1ab258cf6ad4a06b3f655e4c4289e63760986ebdd6fb874d11aa2daae1395f8c2dd42e01f141ea336babd36c@127.0.0.1:8013"]
+interface = "local"
+port = 8011               
+path = "db.ss1/secretstore"
+
+[account]
+password = ["ss1.pwd"]

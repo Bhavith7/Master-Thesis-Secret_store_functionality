@@ -1,0 +1,4 @@
+#!/bin/bash
+ts=$(date +%s%N)
+curl -X POST http://localhost:8010/shadow/efc55ef887f26041bb7cb73c82ca3481666569b10da1ba80269e32e440bec80f/55c2d2dddf715815ad5da70a03cd1c7ac059bbb669ef9f132988fb1f73f80c571dae1150825eeaf98aa21ad1107da37a1dc3c6949e2e75e5de364dc45c821ee801/d28fcc13360e5cabcb9c381f3642022c38358c14c54c6c82aa1f66221ed41ba56b7d86d96c869b2c455e2e79dc82b612c8befa586b054c57c11c3babbf193a6f/7a87e2c39ca2c78aca56baf38896ebba7400f737c89da0bebb9bb6412b5bcb6ad07dae52712e271af6428c97a92a5674d72d6c2c0da9739feac740a9433dfbe6
+echo "Time taken to store document key is :$((($(date +%s%N) - $ts)/1000000)) milliseconds"

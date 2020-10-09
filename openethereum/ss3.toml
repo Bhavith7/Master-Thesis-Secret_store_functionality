@@ -1,0 +1,39 @@
+
+[parity]
+chain = "dev"
+base_path = "db.ss3"
+
+[ui]
+disable = true
+
+[rpc]
+disable = true
+
+[ipc]
+disable = true
+
+[dapps]
+disable = true
+
+[websockets]
+disable = true
+
+[network]
+port = 30303
+bootnodes = ["enode://6ff1fff2aa347563451594d0c3243d52932ab352689abd254762f806dc10c9056083913a9ac996d0e9b0258920502e6d23f07ef4719579fe4311a5028a6f9435@127.0.0.1:30301",
+             "enode://2e3c709ca256e43694e9cc0c6f5c1845c308d373b8e54021c1834e94eda4927b8c41212eb07541f0c02511ba8410430740d27011b999cbcab0b658a269e40a3e@127.0.0.1:30302"]
+[secretstore]
+self_secret = "d763953136b2f9b6ba813ebd97b13949493456cb"
+disable = false
+disable_http = true   
+acl_contract = "none" 
+server_set_contract = "none"
+nodes = ["c824f93eac9ead78590599dc70f286c401813c49eff99db2370c1b97c25a7d122fe8ed945aa641da0bf376d022536a3362027dd5a0f5c7bcaa34a56c72dd6f2f@127.0.0.1:8011",
+         "e2588d93917c74a63226e485099d6a5a2b7f876ae0aaebf92bc07db20f185eaad5d096e6818050c82c05b958536ce5ef05dd37cfa3a99bd9f6bb23adbfa567ba@127.0.0.1:8012",
+         "73dabbf22153769ada1ba44c318ef6a5d285fe2c1ab258cf6ad4a06b3f655e4c4289e63760986ebdd6fb874d11aa2daae1395f8c2dd42e01f141ea336babd36c@127.0.0.1:8013"]
+interface = "local"
+port = 8013
+path = "db.ss3/secretstore"
+
+[account]
+password = ["ss3.pwd"]
